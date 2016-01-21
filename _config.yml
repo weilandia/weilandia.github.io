@@ -2,13 +2,12 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+relative_permalinks: false
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
-paginate:            1
+title:               Nick Weiland
+tagline:             blog
+url:                 http://weilandia.github.io
 baseurl:             ""
 
 # Assets
@@ -20,11 +19,11 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Nick Weiland
+  url:               https://twitter.com/weilandia
+  email:             nickweiland@gmail.com
 
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/weilandia/weilandia.github.io
