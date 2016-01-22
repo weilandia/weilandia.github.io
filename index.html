@@ -1,3 +1,55 @@
----
-layout: landing_default
----
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="public/favicon.ico">
+
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+  <body>
+
+    <script>
+    $(function(){
+        $(".element").typed({
+            strings: ["Hi.^1000 I'm Nick.", "It's a big world out there.^3000 \nLet's make it better."],
+            typeSpeed: 0
+        });
+    });
+    </script>
+
+    <div class="container content">
+      <header class="masthead">
+        <h1 class="masthead-title">
+          <a href="weilandia.github.io/" title="Home">Nick Weiland</a>
+          <small>a website</small>
+        </h1>
+      </header>
+
+      <main>
+      <span class="element" id="landing" style="white-space:pre"></span><br><br>
+      </main>
+      <div id="landing">I write <a href="https://github.com/weilandia">code</a> and <a href="https://twitter.com/weilandia">comment</a> on things.<br>Sometimes I write longer <a href="http://weilandia.github.io/blog.html">comments</a>.<br>I used to teach math in a <a href="https://en.wikipedia.org/wiki/Detroit">badass city</a>.<br>I love surfing though, so heading towards a coast.<br>I have one of those <a href="/resume.html">resume</a> things, if you like that sort of thing.</div>
+
+      <footer class="footer">
+        <small>
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
