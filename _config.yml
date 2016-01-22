@@ -6,7 +6,7 @@ relative_permalinks: false
 
 # Setup
 title:               Nick Weiland
-tagline:             blog
+tagline:             a blog
 url:                 http://weilandia.github.io
 baseurl:             ""
 
