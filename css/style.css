@@ -1,18 +1,27 @@
+h2 a {
+  color: #fff;
+  font-size: 35px;
+}
+
 .constrain {
     max-width: 640px;
     margin: auto
 }
 
 #elstory-article-1 {
-    background-image: url(../Images/Classroom.jpeg)
+    background-image: url(../Images/MYC.jpeg)
 }
 
 #consumer-article-1 {
-    background-image: url(../Images/Towel.jpg)
+    background-image: url(../Images/night-sky.jpg)
+}
+
+#blog {
+    background-image: url(../Images/galaxy.jpg)
 }
 
 #twitter-article-1 {
-    background-image: url(../Images/Classroom.jpg)
+    background-image: url(../Images/galaxy.jpg)
 }
 
 .navbar {
