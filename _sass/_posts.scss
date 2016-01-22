@@ -15,7 +15,7 @@
   color: #303030;
 }
 .page-title,
-.post-title {
+.post-title a{
   margin-top: 0;
 }
 
@@ -47,6 +47,10 @@
     small {
       font-size: 75%;
       color: #999;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     a:hover {

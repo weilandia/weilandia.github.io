@@ -99,7 +99,7 @@
     transition: background .5s ease
 }
 #home-top-stories .article .constrain {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     margin-left: -320px;
@@ -109,17 +109,12 @@
     -o-transform: translateY(-50%);
     transform: translateY(-50%)
 }
-#home-top-stories .article-kicker {
-    color: #168dd9;
-    font-family: AdelleBold, 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    font-size: .875em
-}
+
 #home-top-stories .article-title {
     color: #fff;
     font-size: 2em;
     font-family: AdelleBold, 'Helvetica Neue', sans-serif;
-    line-height: 1.3
+    line-height: 1.5
 }
 @media only screen and (max-width: 599px) {
     #home-top-stories .article-title {
