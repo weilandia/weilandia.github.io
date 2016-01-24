@@ -233,7 +233,7 @@ THINGS I LOVE
   left: 7px;
 }
 
-.hobby:hover{
+.hobby:before:hover{
   color: #c0392b;
 }
 
