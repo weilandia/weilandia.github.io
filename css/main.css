@@ -23,6 +23,10 @@ body{
   background: #ededed;
 }
 
+li:hover{
+  color: #fff;
+}
+
 .links {
     text-decoration: none;
     color: #363636;
@@ -108,8 +112,9 @@ EXPERIENCES
   line-height: 1.5em;
 }
 
-.job .job-section{
+.job .job-section:hover{
   background: #95a5a6;
+  color: #fff;
 }
 
 
