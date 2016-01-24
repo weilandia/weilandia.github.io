@@ -152,6 +152,18 @@ SKILLS
   font-size: 1.3em;
   font-weight: 600;
 }
+.item-skills:hover{
+  height: 30px;
+  background: #f39c12;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.3em;
+  font-weight: 600;
+}
 .skills-legend{
   margin-top: 20px;
   opacity: 0.8;
