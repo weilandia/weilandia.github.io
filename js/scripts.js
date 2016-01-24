@@ -22,12 +22,3 @@ window.onresize = function() {
 		callback();
 	}, 100);
 };
-
-window.onload = function() {
-	var links = document.links;
-	for(var h in links) {
-		var rand = Math.floor(Math.random() * 10000);
-		var param = '?';
-		links[h].href += (links[h].href.indexOf('?') == -1 ? '?' : '&')+'rand='+param+rand;
-	}
-};
