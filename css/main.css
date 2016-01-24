@@ -24,30 +24,27 @@ body{
 }
 
 .links {
+    text-decoration: none;
     color: #363636;
     cursor: default;
-    text-decoration: none;
 }
 
 .links:hover {
+    text-decoration: none;
     color: #EC7263;
     cursor: default;
 }
 
 
-#name{
+#name {
   font-family: 'Open Sans', Arial, Tahoma;
   font-weight: 700;
 }
 
-.pdf{
+.pdf {
   float: right;
   font-weight: 400;
   font-size: 55%;
-}
-
-.pdf:hover{
-  color: #EC7263;
 }
 
 .pdf:before{
@@ -70,6 +67,7 @@ CONTAINER
   margin-bottom: 15px;
   background: #fff;
 }
+
 /*******************************************
 DEFAULT BOX
 *******************************************/
@@ -90,18 +88,15 @@ DEFAULT BOX
   font-size: 1.3em;
   line-height: 1.5em;
 }
+
 /*******************************************
 EXPERIENCES
 *******************************************/
 .job{
   margin-bottom: 15px;
 }
-.job .where{
-  font-size: 1.4em;
-  font-weight: bold;
-}
 .job .year{
-  font-size: 1.3em;
+  font-size: 1.2em;
   opacity: 0.7;
 }
 .job .profession{
@@ -112,6 +107,12 @@ EXPERIENCES
   font-size: 1.2em;
   line-height: 1.5em;
 }
+
+.job .job-section{
+  background: #95a5a6;
+}
+
+
 
 /*******************************************
 SCHOOL
