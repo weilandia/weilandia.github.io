@@ -75,3 +75,16 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
+
+.not-found {
+  body {
+    background: #000 no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#fff;
+    background-color:#000;
+    font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+  }
+}
