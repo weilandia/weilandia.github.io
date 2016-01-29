@@ -160,6 +160,21 @@ SKILLS
 .item-skills:hover{
   background: #f39c12;
 }
+.item-skills-soft{
+  height: 30px;
+  background: #2980b9;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.item-skills-soft:hover{
+  background: #3498db;
+}
 .skills-legend{
   margin-top: 20px;
   opacity: 0.8;
