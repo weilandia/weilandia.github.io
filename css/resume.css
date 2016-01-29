@@ -1,6 +1,11 @@
 /*******************************************
 FONTS
 *******************************************/
+@font-face
+{
+font-family: Gotham-Black;
+src: url('fonts/gotham-black.ttf'),
+}
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 /*******************************************
@@ -37,8 +42,7 @@ body{
 
 
 #name {
-  font-family: 'Open Sans', Arial, Tahoma;
-  font-weight: 700;
+  font-family: 'gotham-black', Arial, Tahoma;
 }
 
 .pdf {
