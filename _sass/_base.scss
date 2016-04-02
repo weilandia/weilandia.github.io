@@ -31,6 +31,10 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
+.light {
+  font-weight: 300;
+}
+
 // No `:visited` state is required by default (browsers will use `a`)
 a {
   color: #515151;
