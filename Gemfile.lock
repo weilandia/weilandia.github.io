@@ -132,8 +132,6 @@ PLATFORMS
 DEPENDENCIES
   codebase
   github-pages
-  jekyll-paginate
-  jekyll-watch
   kramdown
   rouge
 
