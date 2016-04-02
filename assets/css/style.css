@@ -32,6 +32,10 @@ body {
   font-weight: 300;
 }
 
+.semibold {
+  font-weight: 600;
+}
+
 a {
   color: #515151;
 
@@ -46,49 +50,6 @@ a {
   }
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0 0 1rem;
-  border-radius: 5px;
-}
-
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  font-size: 85%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse;
-}
-
-td,
-th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
-}
-
-th {
-  text-align: left;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
-}
-
-.not-found {
-  body {
-    background: #000 no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color:#fff;
-    background-color:#000;
-    font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
-  }
-}
-
 /*All that*/
 .allthat-list {
   line-height: 2.0;
@@ -98,93 +59,49 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
+}
 
-  a {
-    color: #2980b9;
-    font-weight: bold;
-  }
+.allthat a {
+  color: #2980b9;
+  font-weight: bold;
+}
 
-  small {
-    font-size: 75%;
-    font-weight: 400;
-    color: #c0c0c0;
-    letter-spacing: 0;
-  }
+.allthat small {
+  font-size: 75%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
 
-  span {
-    font-size: 80%;
-    font-weight: 400;
-    color: #505050;
-    opacity: 90;
-    letter-spacing: 0;
-  }
+.allthat span {
+  font-size: 80%;
+  font-weight: 400;
+  color: #505050;
+  opacity: 90;
+  letter-spacing: 0;
 }
 
 .allthatmovies {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
+}
 
-  a {
+.allthatmovies a {
     color: #16A085;
     font-weight: bold;
   }
-
-  small {
-    font-size: 75%;
-    font-weight: 400;
-    color: #c0c0c0;
-    letter-spacing: 0;
-  }
-
-  span {
-    font-size: 80%;
-    font-weight: 400;
-    color: #505050;
-    opacity: 90;
-    letter-spacing: 0;
-  }
-}
 
 /*Masthead*/
 .masthead {
   padding-top:    2rem;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
 }
 
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
-
-  a {
-    color: #505050;
-    text-decoration: none;
-  }
-
-  small {
-    font-size: 75%;
-    font-weight: 400;
-    color: #c0c0c0;
-    letter-spacing: 0;
-  }
-
-  span {
-    font-size: 85%;
-    font-weight: 400;
-    color: #505050;
-    opacity: 90;
-    letter-spacing: 0;
-  }
-
-  span {
-    font-size: 85%;
-    font-weight: 400;
-    color: #505050;
-    opacity: 90;
-    letter-spacing: 0;
-  }
 }
 
 /*Type Animation*/
