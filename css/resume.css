@@ -150,7 +150,7 @@ SCHOOL
 SKILLS
 *******************************************/
 .item-skills{
-  height: 30px;
+  height: 20px;
   background: #F0563D;
   color: #fff;
   padding: 5px 10px;
@@ -165,7 +165,7 @@ SKILLS
   background: #f39c12;
 }
 .item-skills-soft{
-  height: 30px;
+  height: 20px;
   background: #2980b9;
   color: #fff;
   padding: 5px 10px;
@@ -178,6 +178,21 @@ SKILLS
 }
 .item-skills-soft:hover{
   background: #3498db;
+}
+.item-skills-learning{
+  height: 20px;
+  background: #BFBFBF;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.item-skills-learning:hover{
+  background: #BDC3C7;
 }
 .skills-legend{
   margin-top: 20px;
