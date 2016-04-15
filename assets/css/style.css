@@ -252,6 +252,18 @@ a[href^="#fnref:"] {
 }
 
 //Portfolio
+.root-link {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+.root-link:hover {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
 .top-row {
   margin-top: 75px;
 }
