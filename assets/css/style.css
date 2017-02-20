@@ -286,6 +286,11 @@ a[href^="#fnref:"] {
   position:relative
 }
 
+.project img {
+  width: 100%;
+  min-height: 175px;
+}
+
 .project h6 {
   font-size: 100%;
   font-weight: 400;
