@@ -359,6 +359,7 @@ a[href^="#fnref:"] {
 
 .thumbnail {
   padding: 0;
+  overflow: hidden;
 }
 
 .caption {
