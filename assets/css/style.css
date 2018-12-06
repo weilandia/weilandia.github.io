@@ -356,3 +356,11 @@ a[href^="#fnref:"] {
   -moz-animation-duration:3s;
   animation-duration:3s;
 }
+
+.thumbnail {
+  padding: 0;
+}
+
+.caption {
+  padding: 4px;
+}
