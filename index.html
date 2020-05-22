@@ -3,43 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <title>Hi, I'm Nick</title>
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Another personal website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="This is a picture of my dog." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/weilandia" />
+    <meta property="og:image" content="ender.jpeg" />
+    <meta name="theme-color" content="#fafafa">
 
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="assets/js/typed.js"></script>
-    <script src="assets/js/main.js"></script>
   </head>
-  <body>
-    <div class="container content">
-      <header class="masthead">
-        <h1 class="masthead-title">
-          <span class="semibold">Nick</span> <span class="light">Weiland</span>
-         </h1>
-      </header>
+  <body style="line-height: 1.5;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+    <main style="margin: 4rem">
 
-      <main>
-      <span class="element" id="landing" style="white-space:pre"></span><br><br>
-      </main>
-      <div id="landing">I like to <a href="/portfolio">write code and make products</a> that are helpful and easy to understand.
-      <br>My Instagram is mostly surfing, dogs, and tiny homes.<br>I have one of those <a href="https://resume.creddle.io/resume/14ngmti21v1"target="_blank">resume</a> things, if you're into that.</div>
+      <section style="margin-top: 2rem; margin-bottom: 1rem;">
+        <span id="typed" style="white-space:pre;"></span>
+      </section>
+      <section>
+        <a style="color: #007bff; text-decoration: none; opacity: 0; display: block;" target="_blank" href="https://github.com/weilandia">github.com/weilandia</a>
+        <a style="color: #007bff; text-decoration: none; opacity: 0; display: block;" target="_blank" href="./ender.jpeg">A picture of my dog</a>
+        <a style="color: #007bff; text-decoration: none; opacity: 0; display: block;" target="_blank" href="https://www.govly.com/">govly.com</a>
+      </section>
+    </main>
+    <script>
+      new Typed('#typed', {
+        strings: ["^300Hey,^800 I'm Nick.^500", "Hey, my name is Nick.^1200\nWe've landed in transition.^500\n", "Hey, my name is Nick.\nWe've landed in transition.\nNot much to see here.^1500"],
+        typeSpeed: 15,
+        onComplete: function(typed) { typed.cursor.remove() }
+      });
 
-      <footer class="footer">
-        <small>
-        </small>
-      </footer>
-    </div>
+      setTimeout(function() {
+        var links = document.links;
+        for (var i = 0; i < links.length; i++) {
+          links[i].style.transition="opacity 2s";
+          links[i].style.opacity="1";
+        }
+      }, 7200)
+    </script>
   </body>
 </html>
