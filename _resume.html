@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Weiland - Resume</title>
+  <style>
+    :root {
+      --bg-color: #fff;
+      --text-color: #333;
+      --border-color: #eee;
+      --muted-color: #666;
+      --light-color: #999;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #1a1a1a;
+      --text-color: #e0e0e0;
+      --border-color: #333;
+      --muted-color: #aaa;
+      --light-color: #888;
+    }
+
+    body {
+      font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+      line-height: 1.6;
+      color: var(--text-color);
+      background: var(--bg-color);
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 14px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--border-color);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 12px;
+      transition: all 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background: var(--muted-color);
+      color: var(--bg-color);
+    }
+
+    .header {
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 15px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: normal;
+      margin: 0 0 8px 0;
+      color: var(--text-color);
+    }
+
+    .contact {
+      color: var(--muted-color);
+      margin: 0;
+    }
+
+    .contact a {
+      color: var(--muted-color);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: var(--text-color);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: normal;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+      color: var(--text-color);
+    }
+
+    .job {
+      margin-bottom: 30px;
+    }
+
+    .job-header {
+      margin-bottom: 3px;
+    }
+
+    .job-title {
+      font-weight: normal;
+      margin: 0;
+      color: var(--text-color);
+    }
+
+    .company {
+      color: var(--muted-color);
+      margin: 0;
+    }
+
+    .date {
+      color: var(--light-color);
+      font-size: 13px;
+      margin: 2px 0 8px 0;
+    }
+
+    .description {
+      margin: 8px 0 5px 0;
+    }
+
+    .achievements {
+      margin: 5px 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .achievements li {
+      margin: 3px 0;
+      padding-left: 15px;
+      position: relative;
+      color: var(--text-color);
+    }
+
+    .achievements li::before {
+      content: '-';
+      position: absolute;
+      left: 0;
+      color: var(--muted-color);
+    }
+
+    .skills {
+      line-height: 1.8;
+      color: var(--text-color);
+    }
+
+    @media print {
+      .theme-toggle {
+        display: none;
+      }
+
+      body {
+        margin: 20px;
+        font-size: 12px;
+        background: white !important;
+        color: black !important;
+      }
+
+      .name {
+        font-size: 20px;
+      }
+
+      * {
+        background: white !important;
+        color: black !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+  <div class="header">
+    <h1 class="name">Nick Weiland</h1>
+    <div class="contact">
+      <a href="mailto:nickweiland@gmail.com">nickweiland@gmail.com</a> |
+      <a href="https://github.com/weilandia">github.com/weilandia</a> |
+      <a href="https://linkedin.com/in/weilandia">linkedin.com/in/weilandia</a> |
+      Santa Cruz, CA
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // Load saved theme or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+
+  <div class="section">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <h3 class="job-title">Govly - Founder, Product and Eng</h3>
+        <p class="company">2019 - Present | $0 to $3M+ ARR</p>
+      </div>
+
+      <div style="margin-left: 20px;">
+        <p style="margin: 15px 0 5px 0; font-weight: normal;">Foundation: Solo Technical Founder (2019-2021)</p>
+        <ul class="achievements">
+          <li>Built entire product from zero as sole technical founder</li>
+          <li>Made all product, design, and technical architecture decisions</li>
+          <li>Wrote all code and established product-market fit through $1M ARR</li>
+          <li>Part of Y Combinator S21 batch</li>
+        </ul>
+
+        <p style="margin: 15px 0 5px 0; font-weight: normal;">Growth: Technical Lead & Team Builder (2021-2023)</p>
+        <ul class="achievements">
+          <li>Scaled architecture and built engineering team while remaining hands-on</li>
+          <li>Continued leading all product and design decisions</li>
+          <li>Closed Series A with Insight Partners</li>
+          <li>Maintained technical ownership while establishing team processes</li>
+        </ul>
+
+        <p style="margin: 15px 0 5px 0; font-weight: normal;">Scale: Scaling Team & Developing Leaders (2023-Present)
+        </p>
+        <ul class="achievements">
+          <li>Scaled platform from Series A through $3M+ ARR</li>
+          <li>Shipped agentic platform that transformed market intel from reactive to proactive</li>
+          <li>Expanded direct-to-government market including DoD engagement</li>
+          <li>Scaled to SLED and international contracts, integrating 60k+ data sources</li>
+          <li>Grew team and developed leaders to make independent decisions</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3 class="job-title">Previous Experience</h3>
+      </div>
+      <p style="margin: 8px 0;">RaiseMe (2018-2019) - Software Engineer, edtech platform acquired by CampusLogic</p>
+      <p style="margin: 8px 0;">Airbo (2016-2018) - Software Engineer → Lead Engineer, employee engagement platform</p>
+      <p style="margin: 8px 0;">Epic Systems (2014-2015) - Implementation Consultant, healthcare software systems</p>
+      <p style="margin: 8px 0;">Teach For America (2012-2014) - 6th Grade Math Teacher, Detroit public schools</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Education</h2>
+    <p style="margin: 8px 0;">Master of Arts, Urban Pedagogy - University of Michigan, Ann Arbor (2014)</p>
+    <p style="margin: 8px 0;">Bachelor of Arts, History - University of Nevada, Reno (2012)</p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Interests</h2>
+    <div class="skills">
+      Current Focus: LLMs and AI product development<br>
+      Enjoy: Full-stack development, system architecture, helping people grow, building products<br>
+      Approach: Language/framework agnostic - adapt to the right tool for the problem<br>
+      Passion: Building products that solve real problems for real people
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,62 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Hi, I'm Nick</title>
-    <meta name="description" content="Another personal website.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="This is a picture of my dog." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://github.com/weilandia" />
-    <meta property="og:image" content="ender.jpeg" />
-    <meta name="theme-color" content="#fafafa">
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Nick Weiland</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <style>
+    :root {
+      --bg-color: #fff;
+      --text-color: #333;
+      --border-color: #eee;
+      --muted-color: #666;
+      --light-color: #999;
+    }
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <style>
-      a {
-        color: rgb(0, 123, 255);
-      }
+    [data-theme="dark"] {
+      --bg-color: #1a1a1a;
+      --text-color: #e0e0e0;
+      --border-color: #333;
+      --muted-color: #aaa;
+      --light-color: #888;
+    }
 
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: rgb(45, 45, 45);;
-          color: rgb(231, 232, 235);
-        }
+    body {
+      font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      color: var(--text-color);
+      background: var(--bg-color);
+      font-size: 14px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--border-color);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 12px;
+      transition: all 0.3s;
+    }
 
-        a {
-          color: rgb(60, 164, 255);
-        }
-      }
-    </style>
+    .theme-toggle:hover {
+      background: var(--muted-color);
+      color: var(--bg-color);
+    }
+    
+    p {
+      margin-bottom: 2rem;
+    }
+    
+    a {
+      color: var(--muted-color);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: var(--text-color);
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      display: inline;
+      margin-right: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+  <p><span id="typed"></span></p>
+  <ul>
+    <li><a href="https://github.com/weilandia">GitHub</a></li>
+    <li><a href="https://www.govly.com/">Govly</a></li>
+    <li><a href="_resume.html">Resume</a></li>
+  </ul>
+  <script>
+    new Typed('#typed', {
+      strings: ["Hi, I'm Nick. Currently building Govly."],
+      typeSpeed: 20,
+      loop: false,
+      cursorChar: '|'
+    });
 
-  </head>
-  <body style="line-height: 1.5;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
-    <main style="margin: 4rem">
-
-      <section style="margin-top: 2rem; margin-bottom: 1rem;">
-        <span id="typed" style="white-space:pre;"></span>
-      </section>
-      <section>
-        <a style="text-decoration: none; opacity: 0; display: block;" target="_blank" href="https://github.com/weilandia">github.com/weilandia</a>
-        <a style="text-decoration: none; opacity: 0; display: block;" target="_blank" href="./ender.jpeg">A picture of my dog</a>
-        <a style="text-decoration: none; opacity: 0; display: block;" target="_blank" href="https://www.govly.com/">govly.com</a>
-      </section>
-    </main>
-    <script>
-      new Typed('#typed', {
-        strings: ["^300Hey,^800 I'm Nick.^500", "Hey, my name is Nick.^1200\nWe've landed in transition.^500\n", "Hey, my name is Nick.\nWe've landed in transition.\nNot much to see here.^1500"],
-        typeSpeed: 15,
-        onComplete: function(typed) { typed.cursor.remove() }
-      });
-
-      setTimeout(function() {
-        var links = document.links;
-        for (var i = 0; i < links.length; i++) {
-          links[i].style.transition="opacity 2s";
-          links[i].style.opacity="1";
-        }
-      }, 7200)
-    </script>
-  </body>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+    
+    // Load saved theme or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+</body>
 </html>
