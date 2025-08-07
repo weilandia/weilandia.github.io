@@ -26,28 +26,28 @@
 
     body {
       font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-      line-height: 1.6;
-      max-width: 600px;
-      margin: 4rem auto;
-      padding: 0 2rem;
+      line-height: 1.5;
+      max-width: 650px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
       color: var(--text-color);
       background: var(--bg-color);
-      font-size: 14px;
+      font-size: 13px;
       transition: background-color 0.3s, color 0.3s;
     }
-    
+
     .theme-toggle {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 10px;
+      right: 10px;
       background: var(--border-color);
       border: 1px solid var(--border-color);
       color: var(--text-color);
-      padding: 8px 12px;
+      padding: 4px 8px;
       border-radius: 4px;
       cursor: pointer;
       font-family: inherit;
-      font-size: 12px;
+      font-size: 10px;
       transition: all 0.3s;
     }
 
@@ -55,29 +55,51 @@
       background: var(--muted-color);
       color: var(--bg-color);
     }
-    
+
     p {
-      margin-bottom: 2rem;
+      margin: 0 0 0.5rem 0;
     }
-    
+
     a {
       color: var(--muted-color);
       text-decoration: none;
       transition: color 0.3s;
     }
-    
+
     a:hover {
       color: var(--text-color);
     }
-    
+
     ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
-    
+
     li {
       display: inline;
-      margin-right: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+        padding: 0.5cm;
+        font-size: 11pt;
+      }
+
+      .theme-toggle {
+        display: none;
+      }
+      
+      .typed-cursor {
+        display: none;
+      }
+    }
+
+    @page {
+      margin: 0;
+      size: letter;
     }
   </style>
 </head>
@@ -103,7 +125,7 @@
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
     }
-    
+
     // Load saved theme or default to light
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
